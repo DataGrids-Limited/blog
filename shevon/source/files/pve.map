@@ -1,0 +1,23 @@
+<Map user="shevon" pc="SHEVONKUANLAPTO">
+  <Devices>
+    <Device id="4" name="vmbr0" type-id="Switch" x="280" y="336" z="0" />
+    <Device id="12" name="树莓派网卡eth0" address="192.168.1.2" type-id="Card" x="352" y="252" z="9" />
+    <Device id="13" name="带DHCP服务路由器" type-id="Router" x="280" y="188" z="12" />
+    <Device id="14" owner-id="13" name="LAN 1" type-id="Port" x="0" y="0" z="-1" />
+    <Device id="15" index="1" owner-id="13" name="LAN 2" type-id="Port" x="0" y="0" z="-1" />
+    <Device id="16" name="调试用电脑" type-id="Laptop" x="460" y="176" z="13" />
+    <Device id="17" name="vmbr1" type-id="Switch" x="364" y="336" z="14" />
+    <Device id="18" name="vmbr2 (Layer 2)" type-id="Switch" x="444" y="336" z="15" />
+  </Devices>
+  <Lines>
+    <Line nodes="180 272 180 412 588 412 588 272 180 272" z="4" color="CornflowerBlue" />
+    <Line nodes="376 244 302 212" z="7" device1="12" device2="13" />
+    <Line nodes="452 196 333 196" z="11" device1="16" device2="13" />
+    <Line nodes="376 297 470 328" z="8" device1="12" device2="18" />
+  </Lines>
+  <Textes>
+    <Text id="1" x="460" y="400" z="5" width="32" height="8" color="White" padding-left="5" padding-right="5" padding-top="5" padding-bottom="5">
+      <Description><![CDATA[[font face=宋体][font size=9]树莓派内部网络]]></Description>
+    </Text>
+  </Textes>
+</Map>
